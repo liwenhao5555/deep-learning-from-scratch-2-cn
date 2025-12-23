@@ -9,7 +9,7 @@ corpus, word_to_id, id_to_word = ptb.load_data('train')
 vocab_size = len(word_to_id)
 corpus_size = len(corpus)
 
-model = RnnlmGen()
+model = RnnlmGen(vocab_size=vocab_size)
 model.load_params('../ch06/Rnnlm.pkl')
 
 # 设定start单词和skip单词
