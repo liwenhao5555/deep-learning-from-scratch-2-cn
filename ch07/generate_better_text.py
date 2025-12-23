@@ -11,7 +11,7 @@ vocab_size = len(word_to_id)
 corpus_size = len(corpus)
 
 
-model = BetterRnnlmGen()
+model = BetterRnnlmGen(vocab_size=vocab_size)
 model.load_params('../ch06/BetterRnnlm.pkl')
 
 # 设定start字符和skip字符
